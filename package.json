@@ -1,0 +1,24 @@
+{
+  "name": "dark-army-bot",
+  "version": "1.0.0",
+  "description": "this is a personal bot to manage in game clan",
+  "main": "index.js",
+  "dependencies": {
+    "@line/bot-sdk": "^6.8.4",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackhydra420/dark-army-bot.git"
+  },
+  "author": "Prince kushwaha (BlackHydra)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackhydra420/dark-army-bot/issues"
+  },
+  "homepage": "https://github.com/blackhydra420/dark-army-bot#readme"
+}
