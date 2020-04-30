@@ -1,3 +1,5 @@
+console.log("app starting");
+
 const express = require('express');
 const line = require('@line/bot-sdk');
 
@@ -18,7 +20,7 @@ function handleEvent(event) {
   if (event.type !== 'message' || event.message.type !== 'text') {
     return Promise.resolve(null);
   }
-
+  console.log("message send");
   return client.replyMessage(event.replyToken, {
     type: 'text',
     text: event.message.text
