@@ -2,8 +2,8 @@ const express = require('express');
 const line = require('@line/bot-sdk');
 
 const config = {
-  channelAccessToken: 'XECDjsxpLsOMsh1BFLbJG4YzabzviASDRRqAHKBMge4nLjkkOGbyDlIdiIZQzWwoUAVE3CpiFlqCzH2gzVI4MmpZ6I56x3DLNt7AYBfXr6Ay7L17ND1rcOiPCv59Bixf5f7axMcyzTu/BBjcnpjM6wdB04t89/1O/w1cDnyilFU',
-  channelSecret: 'dcb2f6a840a23832c5693756743222af'
+  channelAccessToken: process.env.ACCESS_TOKEN,
+  channelSecret: process.env.SECRET
 };
 
 const app = express();
