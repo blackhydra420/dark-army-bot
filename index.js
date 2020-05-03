@@ -1,5 +1,7 @@
 console.log("app starting");
 
+require('dotenv').config({path:__dirname + "/.env"});
+
 const express = require('express');
 const line = require('@line/bot-sdk');
 
@@ -10,6 +12,7 @@ const config = {
 
 const app = express();
 app.post('/webhook', line.middleware(config), (req, res) => {
+    console.log("Inside webhook");
   Promise
     .all(req.body.events.map(handleEvent))
     .then((result) => res.json(result));
@@ -27,4 +30,4 @@ function handleEvent(event) {
   });
 }
 
-app.listen(3000);
+app.listen(process.env.PORT, () => console.log("Listening to port 3000"));
